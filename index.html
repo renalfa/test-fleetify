@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>To-Do List</h1>
+        <button id="toggle-theme" class="toggle-theme">🌙</button>
+      </header>
+
+      <form id="task-form">
+        <input type="text" id="task-title" placeholder="Judul tugas" required />
+        <textarea id="task-desc" placeholder="Deskripsi tugas"></textarea>
+        <button type="submit">Tambah</button>
+      </form>
+
+      <div class="filters">
+        <button data-filter="all" class="filter-button active">Semua</button>
+        <button data-filter="pending" class="filter-button">Pending</button>
+        <button data-filter="completed" class="filter-button">Selesai</button>
+      </div>
+
+      <ul id="task-list"></ul>
+
+      <p id="empty-state" class="empty-state">Todo list is empty. 🎉</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
